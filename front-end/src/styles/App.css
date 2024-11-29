@@ -1,0 +1,133 @@
+/* General Reset */
+body, h1, h2, h3, p, ul, li, a, button, input, textarea {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Blue #2b42a0 */
+/* Red b33939*/
+/* White ffffff*/
+
+body {
+  font-family: Arial, sans-serif;
+  color: #333;
+  background-color: #f9f9f9;
+  line-height: 1.6;
+}
+
+/* Global Container */
+main {
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 0 20px;
+}
+
+/* Header Styles */
+header {
+  background-color: #2b42a0;
+  color: white;
+  padding: 10px 20px;
+}
+
+header nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  gap: 20px;
+}
+
+header nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.1rem;
+  transition: color 0.3s ease;
+}
+
+header nav ul li a:hover {
+  color: #ff9900;
+}
+
+/* Footer Styles */
+footer {
+  text-align: center;
+  background-color: #2b42a0;
+  color: white;
+  padding: 10px 20px;
+  margin-top: 20px;
+}
+
+/* Service Card Styles */
+.service-card {
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  margin: 10px 0;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease;
+}
+
+.service-card:hover {
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.service-card h2 {
+  color: #003366;
+  margin-bottom: 10px;
+}
+
+.service-card p {
+  color: #666;
+}
+
+/* Contact Form Styles */
+form {
+  max-width: 600px;
+  margin: 20px auto;
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+form input, form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+form textarea {
+  height: 100px;
+  resize: vertical;
+}
+
+form button {
+  background-color: #2b42a0;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+form button:hover {
+  background-color: #ff9900;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  header nav ul {
+    flex-direction: column;
+    align-items: start;
+  }
+
+  form {
+    padding: 15px;
+  }
+}
