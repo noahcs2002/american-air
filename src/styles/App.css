@@ -1,13 +1,8 @@
-/* General Reset */
 body, h1, h2, h3, p, ul, li, a, button, input, textarea {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-
-/* Blue #2b42a0 */
-/* Red b33939*/
-/* White ffffff*/
 
 body {
   font-family: Arial, sans-serif;
@@ -16,14 +11,12 @@ body {
   line-height: 1.6;
 }
 
-/* Global Container */
 main {
   max-width: 1200px;
   margin: 20px auto;
   padding: 0 20px;
 }
 
-/* Header Styles */
 header {
   background-color: #2b42a0;
   color: white;
@@ -48,7 +41,6 @@ header nav ul li a:hover {
   color: #ff9900;
 }
 
-/* Footer Styles */
 footer {
   text-align: center;
   background-color: #003366;
@@ -57,7 +49,6 @@ footer {
   margin-top: 20px;
 }
 
-/* Service Card Styles */
 .service-card {
   background: white;
   border: 1px solid #ddd;
@@ -81,7 +72,6 @@ footer {
   color: #666;
 }
 
-/* Contact Form Styles */
 form {
   max-width: 600px;
   margin: 20px auto;
@@ -120,7 +110,6 @@ form button:hover {
   background-color: #ff9900;
 }
 
-/* Responsive Design */
 @media (max-width: 768px) {
   header nav ul {
     flex-direction: column;
