@@ -26,7 +26,7 @@ const Home: React.FC = () => {
 
     {id : -2, title: <LocalPhoneIcon/>, value: <a href='tel:+16064165980'>(606) 416 - 5980</a>},
     {id : -1, title: <MailOutlineIcon/>, value: <a href="mailto:americanaircompany@gmail.com">americanaircompany@gmail.com</a>},
-    {id: 0, title: <LocationOnIcon/>, value: <a target='_blank' href='https://www.google.com/maps/search/?api=1&query=283+hwy+790+bronston+ky+42518'>283 HWY 790, Bronston, KY 42518</a>},
+    {id: 0, title: <LocationOnIcon/>, value: <a target='_blank' href='https://www.google.com/maps/search/?api=1&query=283+hwy+790+bronston+ky+42518' rel="noreferrer">283 HWY 790, Bronston, KY 42518</a>},
     {},
     {},
     {id : 1, title : 'MONDAY', value: '9:00AM - 5:00PM'},
