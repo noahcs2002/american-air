@@ -1,93 +1,286 @@
 /* Home Page Container */
 .home-container {
-    max-width: 1200px;
-    margin: 20px auto;
-    padding: 0 20px;
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 0 20px;
+  overflow-x: hidden;
+  /* align-items: center; */
+  /* text-align: center; */
+}
+
+body, .container {
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+.spacer {
+  padding: 10px;
+}
+
+/* Introduction Section */
+.intro {
+  text-align: center;
+  margin-bottom: 40px;
+  display: flex;
+  align-items: center;
+  color: black;
+}
+
+.intro h2 {
+  color: #003366;
+}
+
+.intro .left {
+  padding: 20px;
+  border-radius: 10px;
+  margin-right: 20%;
+  width: 40%;
+  min-height: 100%;
+  height: 240px;
+}
+
+.intro .right {
+  width: 40%;
+  padding: 20px;
+  border-radius: 10px;
+  height: 240px;
+  min-height: 100%;
+}
+
+.intro h1 {
+  color: rgb(0, 51, 102);
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.intro p {
+  color: #666;
+  font-size: 1.2rem;
+  line-height: 1.5;
+}
+
+/* Gallery Section */
+.gallery {
+  margin-bottom: 40px;
+}
+
+.gallery h2 {
+  color: #003366;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.image-placeholder {
+  background-color: #ddd;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  font-size: 1.2rem;
+  color: #666;
+  border-radius: 8px;
+  overflow: hidden;
+  position: relative;
+}
+
+.image-placeholder img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 0px -25px;
+  border-radius: 8px;
+  scale: 100%;
+}
+
+.image-caption {
+  background: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  font-size: 1rem;
+  text-align: center;
+  padding: 5px 10px;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+}
+
+/* Services Overview Section */
+.services-overview {
+  text-align: center;
+  display: flex;
+  align-items: center;
+}
+
+.services-overview h2 {
+  color: #003366;
+}
+
+.services-overview .left {
+  margin-right: 50px;
+  width: 75%;
+}
+
+.services-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.service-card {
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  width: 100px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease;
+}
+
+.service-card:hover {
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.service-card h3 {
+  color: #003366;
+  margin-bottom: 10px;
+}
+
+.service-card p {
+  color: #666;
+}
+
+.hours {
+  padding: 20px;
+}
+
+.get-in-touch {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  gap: 10px;
+}
+
+.hour-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f9f9f9;
+  /* word-wrap: break-word; /* Break long words or URLs */
+  /* word-break: break-word; /* Ensure longer words break properly */
+  /* overflow-wrap: break-word; /* Add fallback for older browsers */
+}
+
+.hour-card b, .hour-card p:first-child {
+  margin: 0;
+  width: 100px;
+}
+
+.value {
+  width: 300px;
+}
+
+.hour-item-card {
+  display: flex;
+  text-align: left;
+}
+
+.hour-item-card .value {
+  margin-left: 25px;
+}
+
+.phone {
+  display: flex;
+}
+
+.phone p {
+  margin-left: 30px;
+}
+
+/* Media Queries for Mobile */
+@media (max-width: 768px) {
+  /* Home Page Container */
+  .home-container {
+      padding: 0 10px;
   }
-  
+
   /* Introduction Section */
   .intro {
-    text-align: center;
-    margin-bottom: 40px;
+      flex-direction: column;
+      align-items: flex-start;
+      margin-bottom: 20px;
   }
-  
+
+  .intro .left, .intro .right {
+      width: 100%;
+      margin-right: 0;
+      height: auto;
+      padding: 10px;
+  }
+
   .intro h1 {
-    color: #003366;
-    font-size: 2.5rem;
-    margin-bottom: 10px;
+      font-size: 2rem;
+      margin-bottom: 8px;
   }
-  
+
   .intro p {
-    color: #666;
-    font-size: 1.2rem;
-    line-height: 1.5;
+      font-size: 1rem;
   }
-  
+
   /* Gallery Section */
-  .gallery {
-    margin-bottom: 40px;
-  }
-  
-  .gallery h2 {
-    color: #003366;
-    text-align: center;
-    margin-bottom: 20px;
-  }
-  
   .image-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 20px;
+      grid-template-columns: 1fr 1fr; /* Two columns on mobile */
+      gap: 10px;
   }
-  
+
   .image-placeholder {
-    background-color: #ddd;
-    height: 150px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 1.2rem;
-    color: #666;
-    border-radius: 8px;
+      height: 250px; /* Adjust height for smaller screens */
   }
-  
+
+  .image-caption {
+      font-size: 0.8rem;
+      padding: 5px;
+  }
+
   /* Services Overview Section */
   .services-overview {
-    text-align: center;
+      flex-direction: column;
+      align-items: flex-start;
   }
-  
-  .services-overview h2 {
-    color: #003366;
-    margin-bottom: 20px;
+
+  .services-overview .left {
+      width: 100%;
+      margin-right: 0;
   }
-  
+
   .services-list {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
+      flex-direction: column;
+      align-items: center;
   }
-  
+
   .service-card {
-    background: white;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    padding: 20px;
-    width: 300px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    transition: box-shadow 0.3s ease;
+      width: 80%; /* Increase card width on mobile */
+      margin-bottom: 15px;
   }
-  
-  .service-card:hover {
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+
+  .hours {
+      padding: 10px;
   }
-  
-  .service-card h3 {
-    color: #003366;
-    margin-bottom: 10px;
+
+  /* Get in touch section */
+  .get-in-touch {
+      padding: 0 10px;
   }
-  
-  .service-card p {
-    color: #666;
+
+  .phone p {
+      margin-left: 10px;
   }
-  
+
+  .hour-card {
+    font-size: 14px; /* Reduce font size if needed */
+    word-wrap: break-word;
+}
+}

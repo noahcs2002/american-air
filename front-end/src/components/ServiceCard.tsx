@@ -1,17 +1,11 @@
 import React from 'react';
+import '../styles/Services.css'
 
-interface ServiceCardProps {
-  title: string;
-  description: string;
-}
-
-const ServiceCard: React.FC<ServiceCardProps> = ({ title, description }) => {
-  return (
-    <div className="service-card">
-      <h2>{title}</h2>
-      <p>{description}</p>
-    </div>
-  );
-};
+const ServiceCard: React.FC<{ title: string; description: string }> = ({ title, description }) => (
+  <div className="service-card">
+    <h2>{title}</h2>
+    <p>{description}</p>
+  </div>
+);
 
 export default ServiceCard;

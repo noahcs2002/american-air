@@ -1,18 +1,25 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import '../styles/Header.css';
+import LocalPhoneIcon from '@mui/icons-material/LocalPhone';
+import MailOutlineIcon from '@mui/icons-material/MailOutline';
+import LocationOnIcon from '@mui/icons-material/LocationOn';
+
 
 const Header: React.FC = () => {
   return (
-    <header>
-      <nav>
-        <ul>
-          <li><Link to="/">Home</Link></li>
-          <li><Link to="/services">Services</Link></li>
-          <li><Link to="/about">About</Link></li>
-          <li><Link to="/reviews">Reviews</Link></li>
-          <li><Link to="/contact">Contact</Link></li>
-        </ul>
-      </nav>
+    <header className='navbar'>
+          <div className='nav-left'>
+            <img src='../images/logo_trans.png'>
+            </img>
+          </div>
+          <div className='nav-right'>
+            <ul>
+              <li> <LocalPhoneIcon/> <a href='tel:+16064165980'>(606) 416 - 5980</a></li>
+              <li> <MailOutlineIcon/> <a href="mailto:americanaircompany@gmail.com">americanaircompany@gmail.com</a></li>
+              <li> <LocationOnIcon/> <a target='_blank' href='https://www.google.com/maps/search/?api=1&query=283+hwy+790+bronston+ky+42518'>283 HWY 790, Bronston, KY 42518</a></li>
+            </ul>
+          </div>
     </header>
   );
 };

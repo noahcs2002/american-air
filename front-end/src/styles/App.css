@@ -32,7 +32,7 @@ header {
 
 header nav ul {
   display: flex;
-  justify-content: center;
+  justify-content: end;
   list-style: none;
   gap: 20px;
 }
@@ -51,7 +51,7 @@ header nav ul li a:hover {
 /* Footer Styles */
 footer {
   text-align: center;
-  background-color: #2b42a0;
+  background-color: #003366;
   color: white;
   padding: 10px 20px;
   margin-top: 20px;

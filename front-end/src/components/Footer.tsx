@@ -3,7 +3,7 @@ import React from 'react';
 const Footer: React.FC = () => {
   return (
     <footer>
-      <p>&copy; {new Date().getFullYear()} American Air. All rights reserved.</p>
+      <p>&copy; {new Date().getFullYear()} American Air HVAC Services. All rights reserved.</p>
     </footer>
   );
 };
