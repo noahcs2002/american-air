@@ -41,12 +41,11 @@ const Home: React.FC = () => {
   return (
     <main className="home-container">
       <h1>American Air HVAC Services</h1>
-      <div className='spacer'></div>
       <section className="intro">
         <div className='left'>
           <h2>Service You Can Trust</h2>
           <p>
-          We offer a wide range of HVAC services, including installation, maintenance, and repair for both <b>residential</b> and <b>commercial</b> sites.
+          We offer a wide range of HVAC services, including installation, maintenance, and repair for both <b>residential</b> and <b>commercial</b> units.
           </p>
           <p>
           From air conditioning to furnace repair, we have you covered. 
