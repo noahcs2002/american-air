@@ -4,6 +4,8 @@
   margin: 20px auto;
   padding: 0 20px;
   overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
   /* align-items: center; */
   /* text-align: center; */
 }
@@ -25,6 +27,7 @@ body, .container {
   color: black;
   display: flex;
   flex-direction: row;
+  gap:20px
 }
 
 .intro h2 {
@@ -36,6 +39,8 @@ body, .container {
   border-radius: 10px;
   min-height: 100%;
   height: 240px;
+  padding-right: 24px;
+
   /* border: 2px solid red; */
 }
 
@@ -44,6 +49,8 @@ body, .container {
   border-radius: 10px;
   min-height: 100%;
   height: 240px;
+  padding-right: 24px;
+
   /* border: 2px solid red; */
 }
 

@@ -12,12 +12,6 @@ const Home: React.FC = () => {
 
   const services = [
     { id: 1, title: 'Sales', description: 'We sell heat pumps, gas furnaces, mini-splits, p-tacs, air conditioners, wifi-capable and regular thermostats, filters. We specialize in the sale of Day & Night and Goodman units' }, 
-    /* 
-    - Service all brands of heat pumps, furnaces, and air conditioners
-    - Install and service mini splits
-    - Sales, Service and Installation
-    - americanaircompany@gmail.com
-    */
     { id: 2, title: 'Installations', description: 'We install everyting we sell, from HVAC units to air filters and thermostats, we will make sure it gets set up the right way.' },
     { id: 3, title: 'Service', description: 'We preform preventative maintenance and take service calls for issues that arise with heat pumps, gas furnaces, mini-splits, p-tacs, air conditioners and air-conditioners' },
   ];
@@ -42,7 +36,7 @@ const Home: React.FC = () => {
     <main className="home-container">
       <h1>American Air HVAC Services</h1>
       <section className="intro">
-        <div className='left'>
+        <div className='service-card'>
           <h2>Service You Can Trust</h2>
           <p>
           We offer a wide range of HVAC services, including installation, maintenance, and repair for both <b>residential</b> and <b>commercial</b> units.
@@ -51,7 +45,7 @@ const Home: React.FC = () => {
           From air conditioning to furnace repair, we have you covered. 
           </p>
         </div>
-        <div className='right'>
+        <div className='service-card'>
           <h2>Our Promise</h2>
           <p>
           At American Air HVAC Services, we stand behind our work and offer a 100% satisfaction guarantee. 
