@@ -23,13 +23,13 @@ const Home: React.FC = () => {
     {id: 0, title: <LocationOnIcon/>, value: <a target='_blank' href='https://www.google.com/maps/search/?api=1&query=283+hwy+790+bronston+ky+42518' rel="noreferrer">283 HWY 790, Bronston, KY 42518</a>},
     {},
     {},
-    {id : 1, title : 'MONDAY', value: '9:00AM - 5:00PM'},
-    {id : 2, title : 'TUESDAY', value: '9:00AM - 5:00PM'},
-    {id : 3, title : 'WEDNESDAY', value: '9:00AM - 5:00PM'},
-    {id : 4, title : 'THURSDAY', value: '9:00AM - 5:00PM'},
-    {id : 5, title : 'FRIDAY', value: '9:00AM - 5:00PM'},
-    {id : 6, title : 'SATURDAY', value: 'CLOSED'},
-    {id : 7, title : 'SUNDAY', value: 'CLOSED'},
+    {id : 1, title : 'MONDAY', value: '9:00AM - 9:00PM'},
+    {id : 2, title : 'TUESDAY', value: '9:00AM - 9:00PM'},
+    {id : 3, title : 'WEDNESDAY', value: '9:00AM - 9:00PM'},
+    {id : 4, title : 'THURSDAY', value: '9:00AM - 9:00PM'},
+    {id : 5, title : 'FRIDAY', value: '9:00AM - 9:00PM'},
+    {id : 6, title : 'SATURDAY', value: '9:00AM - 7:00PM'},
+    {id : 7, title : 'SUNDAY', value: '9:00AM - 7:00PM'},
   ]
 
   return (
