@@ -11,9 +11,9 @@ const Home: React.FC = () => {
   }, [])
 
   const services = [
-    { id: 1, title: 'Sales', description: 'We sell heat pumps, gas furnaces, mini-splits, p-tacs, air conditioners, wifi-capable and regular thermostats, filters. We specialize in the sale of Day & Night and Goodman units' }, 
-    { id: 2, title: 'Installations', description: 'We install everyting we sell, from HVAC units to air filters and thermostats, we will make sure it gets set up the right way.' },
-    { id: 3, title: 'Service', description: 'We preform preventative maintenance and take service calls for issues that arise with heat pumps, gas furnaces, mini-splits, p-tacs, air conditioners and air-conditioners' },
+    { id: 1, title: 'Sales', description: 'We sell heat pumps, gas furnaces, mini-splits, p-tacs, air conditioners, WiFi-capable and regular thermostats, and filters. We specialize in the sale of Day & Night and Goodman units.' }, 
+    { id: 2, title: 'Installations', description: 'We install everything we sell, from HVAC units to air filters and thermostats, we will make sure it gets set up the right way.' },
+    { id: 3, title: 'Service', description: 'We preform preventative maintenance and take service calls for issues that arise with heat pumps, gas furnaces, mini-splits, p-tacs, air conditioners and air-conditioners.' },
   ];
 
   const hours = [
