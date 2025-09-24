@@ -16,7 +16,7 @@ const Header: React.FC = () => {
             <ul>
               <li> <LocalPhoneIcon/> <a href='tel:+16064165980'>(606) 416 - 5980</a></li>
               <li> <MailOutlineIcon/> <a href="mailto:americanaircompany@gmail.com">americanaircompany@gmail.com</a></li>
-              <li> <LocationOnIcon/> <a target='_blank' href='https://www.google.com/maps/search/?api=1&query=283+hwy+790+bronston+ky+42518' rel="noreferrer">283 HWY 790, Bronston, KY 42518</a></li>
+              <li> <LocationOnIcon/> <a target='_blank' href='https://www.google.com/maps/search/?api=1&query=283+hwy+790+bronston+ky+42518' rel="noreferrer">Somerset and the surrounding area</a></li>
             </ul>
           </div>
     </header>
