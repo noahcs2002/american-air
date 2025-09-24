@@ -1,0 +1,9 @@
+.banner-container {
+    background-color: rgb(156, 3, 3);
+    color: whitesmoke;
+    min-height: 5vh;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}

@@ -5,15 +5,16 @@ import Services from './pages/Services';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import Banner from './components/Banner';
+import FallServiceBanner from './components/Banners/FallServiceBanner';
 
 const App: React.FC = () => {
 
-  const [showBanner, setShowBanner] = useState(false);
+  const showFallBanner = false;
 
   return (
     <Router>
       <Header />
-      {showBanner && <Banner bannerMessage='This is a test Banner Banner Message'/>}
+      {showFallBanner && <FallServiceBanner />}
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/services" element={<Services />} />
